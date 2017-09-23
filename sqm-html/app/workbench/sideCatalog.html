@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/common/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 6]>
+    <link href="../assets/css/common/bootstrap-ie6.css" rel="stylesheet">
+    <link href="../assets/css/common/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--滚动条-->
+    <link rel="stylesheet" href="../assets/css/common/jquery.mCustomScrollbar.css">
+    <title>滚动定位</title>
+    <link rel="stylesheet" href="../assets/css/common/main.styl">
+    <link rel="stylesheet" href="../assets/css/common/side-catalog.styl"/>
+</head>
+<body>
+<style>
+    h3 {
+        border: solid 1px #40ad5e;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin: 10px;
+        border-radius: 5px;
+        text-indent: 10px;
+    }
+</style>
+<h3 id="J_B1">位置1</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 id="J_B2">位置2</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 id="J_B3">位置3</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 id="J_B4">位置4</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 id="J_B5">位置5</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 id="J_B6">位置6</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 id="J_B7">位置7</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="J_SideToolbar" class="ui-side-catalog"></div>
+<script type="text/javascript" src="../assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<!--[if lt IE 6]>
+<script type="text/javascript" src="../assets/js/bootstrap-ie.js"></script>
+<![endif]-->
+<!--滚动条-->
+<script type="text/javascript" src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--bui-->
+<script type="text/javascript" src="../assets/js/bui-min.js"></script>
+<script type="text/javascript" src="../assets/js/common/pageconfig.js"></script>
+<script type="text/javascript" src="../assets/js/sea.js"></script>
+<script type="text/javascript">
+
+    seajs.use(['czy/sideCatalog'], function (sideCatalog) {
+        sideCatalog.init($('#J_SideToolbar'), {
+            width: 200,
+            height: 320,
+            showHeight: 300,
+            cataList: [
+                {title: "位置1", anchor: '#J_B1'},
+                {title: "位置2", anchor: '#J_B2'},
+                {title: "位置3", anchor: '#J_B3'},
+                {title: "位置4", anchor: '#J_B4'},
+                {title: "位置5", anchor: '#J_B5'},
+                {title: "位置6", anchor: '#J_B6'},
+                {title: "位置7", anchor: '#J_B7'}]
+        });
+    });
+</script>
+</body>
+</html>

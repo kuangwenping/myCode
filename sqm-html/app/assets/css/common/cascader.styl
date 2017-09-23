@@ -1,0 +1,190 @@
+.ui-select {
+  display inline-block
+  color: #ddd;
+  input {
+    padding: 0;
+    text-indent: 5px;
+    line-height: 32px;
+  }
+}
+
+::-ms-clear, ::-ms-reveal {
+  display: none;
+}
+
+.ui-cascader-menus {
+  &.visibility {
+    visibility hidden
+  }
+  white-space: nowrap;
+  background: #fff;
+  position: absolute;
+  z-index: 2000;
+  margin: 5px 0;
+  border: 1px solid #d1dbe5;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+  min-height: 200px;
+  .head {
+    overflow: hidden;
+    position relative;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid #d1dbe5;
+    input {
+      margin: 5px;
+      padding: 0;
+      text-indent: 5px;
+      line-height: 32px;
+    }
+  }
+  .main {
+    .block {
+      display: inline-block;
+      float left
+      vertical-align: top;
+      height: 204px;
+      overflow: auto;
+      border-left: 1px solid #d1dbe5;
+      background-color: #fff;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 6px 0;
+      width: 180px
+      &.search {
+        width: 180px
+      }
+      &:last-child {
+        border-right: 0
+      }
+
+      .item {
+        font-size: 14px;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #48576a;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        cursor: pointer;
+        text-indent: 5px;
+        b {
+          color: red;
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          margin-top: -12px;
+        }
+        span {
+          margin: 0 auto;
+          overflow: auto;
+          word-wrap: break-word;
+          word-break: break-all;
+          white-space: pre-wrap;
+          padding-right: 20px;
+          padding-left: 3px;
+        }
+        i, span {
+          display: block;
+        }
+        p {
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          margin-left: -15px;
+          margin-top: -8px;
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-left: 10px solid #40ad5e;
+          border-bottom: 8px solid transparent;
+          a {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: -14px
+            margin-top: -8px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-left: 10px solid #fff;
+            border-bottom: 8px solid transparent;
+          }
+        }
+        &.check {
+          span {
+            margin: 0 0 0 23px;
+            padding: 0
+          }
+          i {
+            background: url("../../img/check.png") no-repeat -1px -1px;
+            width: 23px;
+            height: 23px;
+          }
+          p {
+            display: none;
+          }
+        }
+        label {
+          text-indent: 27px;
+          line-height: 23px;
+          margin-top: -11px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+        }
+        &:hover {
+          background-color: #e4e8f1
+          &.no-data {
+            cursor: no-drop;
+            background: #fff;
+            p {
+              color: #ddd;
+            }
+          }
+          p {
+            a {
+              border-left-color: #e4e8f1;
+            }
+          }
+        }
+        &.selected {
+          color: #fff;
+          background-color: #20a0ff
+          &.hover {
+            background-color: #1c8de0
+          }
+        }
+        &.active {
+          color: #fff;
+          background-color: #40ad5e
+          &:hover {
+            opacity: 0.8;
+          }
+          i {
+            background-position: -1px -48px
+          }
+          p {
+            border-left-color: #fff;
+            a {
+              border-left-color: #40ad5e;
+            }
+          }
+        }
+        &.disabled {
+          color: #bfcbd9;
+          background-color: #fff;
+          cursor: not-allowed
+          &:hover {
+            background-color: #fff
+          }
+        }
+      }
+    }
+  }
+}

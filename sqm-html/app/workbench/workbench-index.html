@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/common/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 6]>
+    <link href="../assets/css/common/bootstrap-ie6.css" rel="stylesheet">
+    <link href="../assets/css/common/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--滚动条-->
+    <link rel="stylesheet" href="../assets/css/common/jquery.mCustomScrollbar.css">
+    <title>问题查看</title>
+    <link rel="stylesheet" href="../assets/css/common/main.styl">
+</head>
+<body>
+    <div class="czy-container">
+        <div class="czy-tab col-tab-4 clear mar-b10" id="workTab"></div>                              
+        <div id="panel">  
+            <div class="tab-content-1">          
+                <div class="fold-thunk search-thunk mar-b20">
+                    <h3 class="fold-btn title-thunk col-md-12">
+                        <i class="czy-icon czy-icon-search-grey mar-r5"></i>任务日历
+                        <i class="fold-arrows float-r"></i>
+                    </h3>
+                    
+                    <div class="content-thunk work-datapicker-thunk clear" >                    
+                        <div class="col-md-10 pad-l0 datapicker-calendar" id="datapickerThunk">
+                            <!-- <div class="month-select">
+                                <a href="#" class="czy-icon line-arrows-left" id='J-prevMonth-btn'></a>                            
+                                <h4 id="J-displyMonth" class="curr-month">2017年6月</h4>
+                                <a href="#" class="czy-icon line-arrows-right" id='J-nextMonth-btn'></a>
+                            </div>                            
+                            <ul class="date-list">
+                                <li class="date-item disable">31</li>
+                                <li class="date-item">1</li>
+                                <li class="date-item">2</li>
+                                <li class="date-item">3</li>
+                                <li class="date-item">4</li>
+                                <li class="date-item">5</li>
+                                <li class="date-item">6</li>
+
+                                <li class="date-item">7</li>
+                                <li class="date-item">8</li>
+                                <li class="date-item">9</li>
+                                <li class="date-item">10</li>
+                                <li class="date-item">11</li>
+                                <li class="date-item">12</li>
+                                <li class="date-item">13</li>
+
+                                <li class="date-item">14</li>
+
+                                <li class="date-item selected">                                    
+                                    <span class="hint-orange">1666</span> 
+                                    <div class="num-list czy-none">
+                                        <span class="num-item left-top flow-num">1</span>
+                                        <span class="num-item right-top workable-num">1</span>
+                                        <span class="num-item left-bottom verify-num">1</span>
+                                        <span class="num-item right-bottom allot-num">1</span>
+                                    </div>    
+
+                                    <span class="date-text">15</span>
+
+                                    <div class="footer-lab">
+                                        <span class="ellipsis">1</span>
+                                        <span class="special-lab ellipsis">1</span>
+                                    </div>
+                                </li>
+
+                                <li class="date-item">16</li>
+                                <li class="date-item">17</li>
+                                <li class="date-item">18</li>
+                                <li class="date-item">19</li>
+                                <li class="date-item">20</li>
+
+                                <li class="date-item">21</li>
+                                <li class="date-item">22</li>
+                                <li class="date-item">23</li>
+                                <li class="date-item">24</li>
+                                <li class="date-item">25</li>
+                                <li class="date-item">26</li>
+                                <li class="date-item">27</li>
+
+                                <li class="date-item">28</li>
+                                <li class="date-item">29</li>
+                                <li class="date-item">30</li>
+                                <li class="date-item">1</li>
+                                <li class="date-item">2</li>
+                                <li class="date-item">3</li>
+                                <li class="date-item">4</li>
+
+                                <li class="date-item">5</li>
+                                <li class="date-item">6</li>
+                                <li class="date-item">7</li>
+                                <li class="date-item">8</li>
+                                <li class="date-item">9</li>
+                                <li class="date-item">10</li>
+                                <li class="date-item">11</li>
+                            </ul> -->
+                        </div>                    
+                         <div class="col-md-2 pad-r0 datapicker-task">
+                            <p class="datapicker-date-headren">今日到期任务</p>
+                            <div class="datapicker-date-body">14</div>
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div class="body-thunk">
+                    <div class="task-tab" id="taskTab"></div>
+                    <div id="pane2">
+                        <div class="table-thunk" id="taskTable1"></div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>2</div>
+
+            <div>3</div>
+        </div>                      
+    </div>
+<script type="text/javascript" src="../assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<!--[if lt IE 6]>
+<script type="text/javascript" src="../assets/js/bootstrap-ie.js"></script>
+<![endif]-->
+<!--滚动条-->
+<script type="text/javascript" src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--bui-->
+<script type="text/javascript" src="../assets/js/bui-min.js"></script>
+<script type="text/javascript" src="../assets/js/common/pageconfig.js"></script>
+<script type="text/javascript" src="../assets/js/sea.js"></script>
+</body>
+</html>

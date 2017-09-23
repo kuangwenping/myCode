@@ -1,0 +1,78 @@
+.ui-side-catalog {
+  position: fixed;
+  background: #e9e9e9;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 999;
+  .main {
+    margin: 10px;
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+    overflow: hidden;
+    .sidebar {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      height: 100%;
+      z-index: 1;
+      width: 0;
+      background-color: #5cb775;
+      border-left: 1px solid #5cb775;
+      border-right: 1px solid #5cb775;
+      .catalog {
+        dl {
+          position: relative;
+        }
+      }
+    }
+    .catalog {
+      overflow: hidden;
+      position: relative;
+      z-index: 10;
+      .over_top, .over_bottom {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 0;
+        height: 50%;
+        background-color: #e9e9e9;
+        border-left: 1px solid #e9e9e9;
+        border-right: 1px solid #e9e9e9;
+        overflow: hidden;
+      }
+      .over_bottom {
+        top: 50%;
+      }
+
+    }
+    .catalog-item {
+      padding: 0 0 0 12px;
+      position: relative;
+      &:hover .dot, &.active .dot {
+        background: #fff;
+        border-color: #5cb775;
+      }
+      div {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          color: #5cb775;
+        }
+      }
+      .dot {
+        position: absolute;
+        top: 50%;
+        left: 1px;
+        border: solid 2px #40ad5e;
+        background: #40ad5e;
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

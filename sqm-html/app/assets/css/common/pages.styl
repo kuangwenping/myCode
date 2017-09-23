@@ -1,0 +1,576 @@
+
+//框架页
+.sqm-header{
+  padding-left:20px;
+  padding-right:20px;
+  height:65px;
+  background:mc;
+  .sqm-title{
+    width:250px;
+    padding-top:11px;
+    padding-bottom:11px;
+    margin-right:40px;
+    h1{
+      font-size 20px;
+    }
+  }
+  .title-text{
+    color:mcb;
+  }
+  .img-box{
+    margin-right:10px;
+    width:40px;
+    height:40px;
+  }
+
+  .sqm-action{
+    padding-top:8px;
+    padding-bottom:5px;
+    .action-item{
+      display block;
+      float:left;
+      setMar0();
+      position:relative;
+      margin-left:30px;
+      text-align center;
+      .hint-red{
+        position absolute;
+        right:0;
+        top:0;
+      }
+      .action-text{
+        margin-top:10px;
+        display block;
+        color:mcb;
+      }
+    }
+  }
+}
+.sqm-content{
+  //框架内容
+  .dl-tab-conten{
+    .dl-tab-item{
+      overflow hidden;
+    }
+  }
+
+   //左侧导航块
+  .dl-collapse{
+    .dl-second-nav{
+      width:40px;
+    }
+    .dl-second-tree{
+      width:40px;
+    }
+    .dl-inner-tab{
+      margin-left:40px;
+    }
+    .dl-second-slib{
+      sbg('../../img/icon/ZK.PNG',50%,50%);      
+    }
+    .menu-second{
+      .bui-menu-title{
+        padding-left:10px;
+      }
+    }
+  }
+  .dl-second-nav{  
+    padding-top:40px;
+    background mabg;
+    width:230px;
+  }
+  .dl-second-tree{      
+    width:230px;
+  }
+  .dl-second-slib-con{
+    top:0;
+    right 0;
+    height:40px;
+    width:40px;
+  }
+
+
+  .dl-second-slib{
+    width:20px;
+    height:16px;
+    sbg('../../img/icon/SQ.PNG',50%,50%);
+    background-size:initial;
+    top:50%;
+    left:50%;
+    margin-top:-8px;
+    margin-left:-10px;
+    border-left: none;
+    border-radius: 0;
+  }
+  .bui-side-menu{
+    padding:0;
+  }
+  //菜单
+  .menu-second{
+    .bui-menu-title{
+      background:mc;
+      height:40px;
+      line-height:40px;
+      border-top:1px solid transparent;
+      padding:0;
+      background-image initial;
+      padding-right:10px;
+      padding-left:20px;
+      margin-left:0;
+      margin-right:0;
+      s{
+        width:11px;
+        height:11px;
+        float:right;
+        margin-top:12px;
+        sbg('../../img/menu-arrows-up.png',50%,50%);
+      }
+
+      .bui-menu-title-text{
+        color:mcb;
+        margin-top:12px;
+        margin-left:5px;
+      }
+
+      .czy-icon{
+        margin-top:7px;
+      }
+    }
+    .bui-menu{
+      margin-top:0;
+    }
+
+    .menu-leaf{
+      &:first-child{
+        border-top:none;
+      }
+      border-top:1px solid mbd;
+      background:mcb;
+      border-left:4px solid transparent;
+      a{
+        height:40px;
+        line-height 40px;
+        margin-bottom:0;
+        background-image initial;
+        em{
+          line-height 40px;
+          height:40px;
+          color:ft1;
+          background-image :initial;
+        }
+      }
+    }
+    .bui-menu-item-selected{
+      background:aux9;
+      border-left-color:mc;
+    }
+    .bui-menu-item-hover{
+      background:aux9;
+    }    
+  }
+  //折叠状态
+  .bui-menu-item-collapsed{
+    .bui-menu-title{
+      background:mabg;
+      border-top-color:mbd2;
+      s{
+        sbg('../../img/menu-arrows-left.png',50%,50%);
+      }
+
+      .bui-menu-title-text{
+        color:ft1;
+      }
+    }
+    //图标
+    .czy-icon-safety{
+      sbg('../../img/icon/AQXIGL_2.PNG',50%,50%);     
+    }
+    //事件调查
+    .czy-icon-SJDC{
+     
+      sbg('../../img/icon/SJDC_2.PNG',50%,50%);  
+    }
+
+    //安全与质量监督审核
+    .czy-icon-JCSH{
+       
+      sbg('../../img/icon/JCSH_2.PNG',50%,50%);  
+    }
+
+    //纠正预防
+    .czy-icon-JZYF{
+      
+      sbg('../../img/icon/JZYF_2.PNG',50%,50%);  
+    }
+
+    //风险管理
+    .czy-icon-FXGL{
+      
+      sbg('../../img/icon/FXGL_2.PNG',50%,50%);  
+    }
+
+    //安全通报与文件
+    .czy-icon-AQBG{
+      
+      sbg('../../img/icon/AQBG_2.PNG',50%,50%);  
+    }
+
+    //系统管理
+    .czy-icon-XTGL{
+       
+      sbg('../../img/icon/XTGL_2.PNG',50%,50%);  
+    }
+  }
+
+  //内容块
+  .dl-inner-tab{
+    margin-left:230px;
+    .bui-nav-tab{
+      padding-top:0;
+    }
+    .tab-nav-bar{
+      height:40px;      
+      background:mabg;
+      border-left:1px solid mbd2;
+    }
+    .tab-nav-list{
+      padding-left:0;
+    }
+      //箭头图标
+    .tab-nav-arrow{
+      top:0;
+      width:30px;
+      height:40px;
+    }
+
+    .arrow-left{
+      left:0;
+      sbg('../../img/tab-left-arrows.png',50%,50%);
+      border-right:1px solid mbd2;
+    }
+
+    .arrow-right{
+      right:0;
+      sbg('../../img/tab-right-arrows.png',50%,50%);
+      border-left:1px solid mbd2;
+    }
+    .tab-nav-wrapper{
+      margin-left:30px;
+      margin-right:30px;
+      background-image initial;
+      .tab-nav-inner{
+        margin-left:0;
+        margin-right:0;
+        background transparent;
+      }
+
+      .tab-item-inner{
+        margin-left:5px;
+        margin-right:0;
+        height:36px;
+        background :none;
+        padding-left:10px;
+        padding-right:30px;
+        border-top:4px solid transparent;
+        border-left:1px solid transparent;
+        border-right:1px solid transparent;
+        .tab-item-title{
+          display inline-block;
+          width:100%;
+          text-overflow ellipsis;
+          overflow hidden;
+          white-space nowrap;
+        }
+      }
+
+      .bui-nav-tab-item{
+        &:first-child{
+          margin-left:0;
+        }
+        margin-top:4px;
+        height:36px;
+        line-height:28px;
+        .tab-item-title{
+          color:ft1;
+        }
+        >s{
+          display none;
+        }
+      }
+      .bui-nav-tab-item-hover,.tab-nav-actived{
+        .tab-item-inner{
+          background :mbg;
+          border-top-color:mc;
+          border-left-color:mbd2;
+          border-right-color:mbd2;
+        }
+        .tab-item-close{
+          display block !important;
+        }
+      }
+      .tab-item-close{
+        top:11px;
+        width:15px;
+        height:15px;
+        sbg('../../img/tab_close.png',50%,50%);
+        display none !important;
+      }
+     }
+  }
+}
+
+
+//检查单库维护—查询
+.audit-checklist-wrap{
+  .czy-key{
+    width:85px;
+  }
+}
+
+//风险评估表
+.staff-assess-wrap{
+  .wrap-thunk{
+    position relative;
+    padding 20px;
+  }
+  .czy-textarea{
+    height:80px;
+    resize vertical;
+  }
+
+  .left-thunk{
+    width:(500/940*100)+'%'
+    min-width:500px;
+  }
+
+  .content-list{
+    width:(420/940*100)+'%'
+    min-width:420px;
+    position absolute;
+    right:20px;
+    top:91px;
+    bottom:20px;
+    background:mbg;
+    padding-top:18px;
+    padding-bottom:18px;
+    li{
+      line-height :1.8;
+    }
+  }
+    .czy-key{
+      width:80px;
+      text-align :right;
+    }
+  .czy-btn-group{
+    text-align center;
+  }
+}
+.staff-assess-editor-wrap{
+  .left-thunk{
+    display inline-block;
+  }
+  .content-list{
+    display inline-block;
+    position initial;
+    max-height:320px;
+    vertical-align :middle;
+  }
+  .par-wrap{
+    margin-left:90px;
+  }
+}
+
+//文件审批
+.notificationcheck-wrap{
+  .wrap-thunk{
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .czy-key{
+    width:100px;
+    text-align :left;
+  }
+}
+
+//文章详情
+.essay-details-wrap{
+  .header-thunk{
+    padding-top:20px;
+    border-bottom:2px solid ft2;
+    background mcb;
+  }
+  .details-title{
+    font-size 22px;
+    margin-bottom 20px;
+  }
+  .key-val-group{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  .details-content{
+    padding :20px;
+    padding-top:30px;
+    line-height:1.5;
+    background:mcb;
+    margin-bottom:20px;
+    >p{
+      text-indent 2em;
+    }
+    .file-item{
+      display inline-block;
+      text-align center;
+      margin-top:20px;
+      a{
+        display:block;
+      }
+    }
+  }
+  .comment-thunk{
+    background :mcb;
+    padding:20px;
+  }
+  .comment-list{
+    margin-top:30px;
+    .comment-item{
+      &:first-child{
+        border-top:none;
+      }
+      border-top:1px solid mbd;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    .user-thunk{
+      img{
+        width:45px;
+        height:45px;
+      }
+      .user-name{
+        display inline-block;
+        margin-top:10px;
+        margin-left:10px;
+      }
+    }
+    .comment-text{
+      margin-left:65px;
+    }
+  }
+}
+
+//首页
+.home-wrap{
+  .p-warning-item{        
+    padding-left:10px;    
+    h4{
+      text-align: center
+      font-size:14px;
+      border-bottom:1px solid mbd;
+      border-radius:6px 6px 0 0;
+      height:40px;
+      line-height:40px;
+    }
+  }
+
+  .wran-item-wrap{
+      background:mcb;
+      border-radius: 6px;
+  }
+
+  .wran-unit{    
+    text-align: center;
+    height:140px;
+    .info-num{
+      display:inline-block;
+      width:60px;
+      height:60px;
+      line-height:60px;
+      border-radius: 50%;
+      font-size:27px;
+      color:mcb;
+      font-weight: bold;
+      margin-bottom:16px;
+      margin-top:24px;
+    }
+    .info-text{
+      color:ft2;
+      width:80%;
+      display: inline-block;
+      font-size:12px;
+      cursor: pointer;
+    } 
+  }
+
+  .content-thunk{    
+    height:240px;
+  }
+
+  //内容块
+  .body-thunk.row{
+    margin-left:-9px;
+    margin-right:-9px;
+    .left-thunk,.right-thunk{
+      padding-left:9px;
+      padding-right:9px;
+    }    
+  }
+
+  .title-text-thunk{
+    background:mcb;
+    height:42px;
+    padding-left:20px;
+    padding-right:20px;
+    line-height:42px;
+    text-align: right;
+    border-bottom:1px solid mbd;
+    h3{
+      margin-top:15px;
+      font-size:14px;
+      font-weight:bold;
+    }    
+  }
+
+  .more-btn{
+    font-size:12px;
+    color:ft2;
+  }
+
+  .task-num-thunk{
+    height:120px;
+    border-radius: 6px 6px 0 0;
+    background:mc;
+    color:mcb;
+    padding-left:30px;
+    padding-top:15px;
+    p{    
+      font-size:18px;
+    }
+    .task-num-text{
+      font-size:44px;
+    }
+  }
+  .task-list{
+    background:mcb;
+    border-radius: 0 0 6px 6px;
+    height:120px;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    .task-item{
+      line-height:2;
+      font-size:12px;      
+    }
+  }
+
+  .phone-list{
+    .phone-item{
+      height:40px;
+      line-height:40px;
+      background:mcb;
+      padding-left:20px;
+      padding-right:20px;
+    } 
+    .icon-phone{
+      
+    }
+  }
+}

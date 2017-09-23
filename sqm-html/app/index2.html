@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SQM</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="./assets/css/dpl-min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/css/bui-min.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/css/main-min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./assets/css/common/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./assets/css/common/main.styl">
+</head>
+<body>
+<div class="sqm-header clear">
+    <a href="#" title="安全质量管理网111" class="czy-block sqm-title float-l">
+        <div class="img-box float-l"><img src="./assets/img/cq_logo.png" alt="春秋航空"></div>
+        <h1 class="title-text">安全质量管理网</h1>
+        <p class="title-text czy-block">Safety Quality Management Web</p>
+    </a>
+
+    <div class="sqm-action clear float-l">
+        <a href="#" title="工作台" class="action-item" >
+            <i class="czy-icon czy-icon-computer"></i>
+            <span class="action-text">我的工作台</span>
+        </a>
+        <a href="#" title="快速安全报告" class="action-item" >
+            <i class="hint-red">10</i>
+            <i class="czy-icon czy-icon-speed"></i>
+            <span class="action-text">快速安全报告</span>
+        </a>
+    </div>
+    <div class="sqm-search">
+
+    </div>
+    <div class="sqm-action clear float-r">
+        <a href="#" title="个人中心" class="action-item" >
+            <i class="czy-icon czy-icon-header"></i>
+            <span class="action-text">个人中心</span>
+        </a>
+        <a href="#" title="站内短信" class="action-item" >
+            <i class="hint-red">10</i>
+            <i class="czy-icon czy-icon-letter"></i>
+            <span class="action-text">站内短信</span>
+        </a>
+        <a href="#" title="操作手册" class="action-item" >
+            <i class="czy-icon czy-icon-book"></i>
+            <span class="action-text">操作手册</span>
+        </a>
+        <a href="#" title="退出" class="action-item" >
+            <i class="czy-icon czy-icon-out"></i>
+            <span class="action-text">退出</span>
+        </a>
+    </div>
+</div>
+<div class="content sqm-content">
+    <!--<div class="dl-main-nav ">-->
+        <!--<div class="dl-inform">-->
+            <!--<div class="dl-inform-title">贴心小秘书<s class="dl-inform-icon dl-up"></s></div>-->
+        <!--</div>-->
+        <!--<ul id="J_Nav" class="nav-list ks-clear czy-none">-->
+            <!--<li class="nav-item dl-selected">-->
+                <!--<div class="nav-item-inner nav-home">首页</div>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<div class="nav-item-inner nav-order">表单页</div>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<div class="nav-item-inner nav-inventory">搜索页</div>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<div class="nav-item-inner nav-supplier">详情页</div>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<div class="nav-item-inner nav-marketing">图表</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <ul id="J_NavContent" class="dl-tab-conten sqm-tab-content">
+
+    </ul>
+</div>
+<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script>
+<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+<script type="text/javascript" src="./assets/js/jquery-1.9.1.js"></script>
+<!--滚动条-->
+<script type="text/javascript" src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="./assets/js/bui-min.js"></script>
+<!--<script type="text/javascript" src="./assets/js/config.js"></script>-->
+<script>        
+    BUI.use('common/main',function(){                
+        var config = [{
+            id: 'menu',
+            homePage: 'home',
+            menu: [
+                {
+                text: '我的工作台',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">系统管理</span><s></s></div>',
+                items: [
+                    {id: 'workbench', text: 'ui-spec', href: 'workbench/workbench-index.html'},
+                    {id: 'workbench', text: '级联下拉', href: 'workbench/index.html'},
+                    {id: 'workbench', text: '滚动定位', href: 'workbench/sideCatalog.html'}
+                ]
+            },{
+                text: '系统管理',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">系统管理</span><s></s></div>',
+                items: [
+                    {id: 'ui-spec', text: 'ui-spec', href: 'system/ui-spec.html'},
+                    {id: 'systemselect', text: 'select', href: 'system/select-test.html'},
+                    {id: 'user', text: '用户管理', href: 'system/user.html'},
+                    {id: 'userNew', text: '用户管理两列布局', href: 'system/user-new.html'},
+                    {id: 'inforeportmaintain', text: '信息报告数据维护', href: 'system/inforeportmaintain.html'},
+                    {id: 'dictionaries', text: '数据字典', href: 'system/dictionaries.html'},
+                ]
+            }, {
+                text: '安全与质量监督审核',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">安全与质量监督审核</span><s></s></div>',
+                items: [
+                    {id: 'checklist', text: '检查单库维护—查询', href: 'safetyqualityexamine/checklist.html'},
+                    {id: 'checklist', text: '检查单库维护—编辑', href: 'safetyqualityexamine/checklist-editor.html'},
+                    {id: 'firmsupervise', text: '公司监督与审核—编辑', href: 'safetyqualityexamine/firmsupervise.html'},
+                ]
+            }, {
+                text: '纠正预防',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">纠正预防</span><s></s></div>',
+                items: [
+                    {id: 'correctQuery', text: '纠正预防查询', href: 'correct/query.html'},
+                    {id: 'issueLook', text: '问题查看', href: 'correct/issuelook.html'},
+                ]
+            }, {
+                text: '风险管理',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">风险管理</span><s></s></div>',
+                items: [
+                    {id: 'riskmanageEvaluate', text: '风险评价标准', href: 'riskmanage/evaluate.html'},
+                    {id: 'riskmanageChangerisk', text: '风险变革管理', href: 'riskmanage/changerisk.html'},
+                ]
+            }, {
+                text: '首页',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">首页</span><s></s></div>',
+                items: [
+                    {id: 'home', text: '首页', href: 'home/index.html'},
+                    {id: 'homeNotificationquery', text: '通报与文件查询', href: 'home/notificationquery.html'},
+                    {id: 'homeotificationcheck', text: '通报与文件审批', href: 'home/notificationcheck.html'},
+                    {id: 'homeManage', text: '通报与文件管理', href: 'home/manage.html'},
+                    {id: 'homeDetails', text: '通报与文件详情', href: 'home/details.html'},
+                ]
+            }, {
+                text: '安全信息管理',
+                collapsed:true,
+                tpl:'<div class="bui-menu-title"><i class="float-l czy-icon czy-icon-safety"></i><span class="bui-menu-title-text">安全信息管理</span><s></s></div>',
+                items: [
+                    {id: 'staffStaffsafety', text: '员工报告新建', href: 'staff/staffsafety.html'},
+                    {id: 'staffInfoinit', text: '信息初始化处理', href: 'staff/infoinit.html'},
+                    {id: 'staffRiskAssess', text: '风险评估-查看', href: 'staff/riskassess.html'},
+                    {id: 'staffRiskAssessEditor', text: '风险评估-编辑', href: 'staff/riskassesseditor.html'},
+                    {id: 'staffAwardcreat', text: '奖励申请新建', href: 'staff/awardcreat.html'},
+                    {id: 'staffAwardlook', text: '奖励申请查看', href: 'staff/awardlook.html'},
+                ]
+            }]
+        }];
+
+        new PageUtil.MainPage({
+            modulesConfig: config
+        });
+    });
+    
+    // $('.bui-side-menu').mCustomScrollbar({
+    //     axis:'y',
+    //     theme:'dark',
+    // });
+</script>
+<script>
+    
+
+</script>
+</body>
+</html>
