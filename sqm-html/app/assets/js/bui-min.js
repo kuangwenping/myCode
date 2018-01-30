@@ -44290,6 +44290,43 @@
         };
         return cascader;
     });
+
+    /**
+     * 级联下拉
+     */
+    define('czy/tips', ['bui/common'], function (require) {
+        var BUI = require('bui/common'),
+        tips = BUI.namespace('cascader');
+
+        tips.Tpis = function(configs){
+            this.configs = {
+                tirgEl : '.bui-grid-cell-text ',
+                ObtainEl:'.bui-grid-cell-text ',
+                $tirgEl : $(tirgEl),
+                $ObtainEl : $(ObtainEl)
+            } 
+            
+            this.init();
+        };
+
+        tips.Tpis.prototype = {
+            init:function(){
+                this.evenInit();
+            },
+            
+            judge:function(){
+                
+            },
+
+            evenInit:function(){
+                $tirgEl.on('mouseenter',function(){
+
+                })
+            }
+        }
+
+        return tips;
+    });
     
     (function () {
         if (BUI.loaderScript.getAttribute('data-auto-use') == 'false') {
